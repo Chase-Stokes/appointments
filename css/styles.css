@@ -1,0 +1,19 @@
+.page-two {
+  display: none;
+}
+
+body {
+  background-color:yellow;
+  animation: pulse 3s infinite;
+}
+  @keyframes pulse {
+    0% {
+      background-color: limegreen;
+    }
+    50% {
+      background-color:yellow;
+    }
+    100% {
+      background-color: limegreen;
+    }
+  }

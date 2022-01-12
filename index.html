@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Appointments</title>
+</head>
+<body>
+  <div class="container">
+    <div class="page-one">
+      <div class="jumbotron">
+        <h1>Book Today</h1>
+      </div>
+      <div class="box">
+        <form id="formOne">
+          <label for="name">Enter Your Name:</label>
+          <input id="name" type="text">
+          <br>
+          <label for="description">Appointment Description:</label>
+          <input id="description" type="text">
+          <br>
+          <label for="date">Date of Appointment:</label>
+          <input type="date" id="appDate">
+          <br>
+          <label for=start>Preferred Start Time:</label>
+          <input type="time" id="startTime">
+          <br>
+          <label for=end>Preferred Start Time:</label>
+          <input type="time" id="endTime">
+          <br>
+          <button type="submit" class="btn-danger">Submit</button>
+        </form>
+
+      </div>
+
+    </div>
+    <div class="page-two">
+      <div class="jumbotron">
+        <h1>BOOKING SUCCESSFUL</h1>
+      </div>
+      <p>Appointment Info:</p>
+      <ul>
+        <li>Name: <span  class="outputName"></span></li>
+        <li>Appointment Description: <span class="outputDescription"></span></li>
+        <li>Date of Appointment: <span class="outputDate"></span></li>
+        <li>Start of Appointment: <span class="outputStart"></span></li>
+        <li>End of Appointment: <span class="outputEnd"></span></li>
+      </ul>
+      <form id="return">
+        <button type="submit" class="btn-danger">Return</button>
+      </form>
+    </div>
+
+  </div>
+  
+</body>
+</html>
